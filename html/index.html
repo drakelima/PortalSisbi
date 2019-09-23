@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>SISBI</title>
+	
+	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+		<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+				
+	<!--			
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+<link rel="stylesheet" href="js/coin-slider-styles.css" type="text/css" />-->
+ 
+		<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+		<script type="text/javascript" src="js/acessibilidade.js"></script>
+	
+    <link rel="stylesheet" href="css/geral.css">
+	<script type="text/javascript">
+			$(document).ready( function() {
+
+				$('#slider').nivoSlider({
+					effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+					animSpeed: 500, // Slide transition speed
+					pauseTime: 3000, // How long each slide will show
+					startSlide: 0, // Set starting Slide (0 index)
+					directionNav: false, // Next & Prev navigation
+					controlNav: true, // 1,2,3... navigation
+					randomStart: true, // Start on a random slide
+				});
+				
+				// initialize scrollable
+				$("#nacionais").scrollable();
+				//$("#locais").scrollable();
+				
+			});
+		</script>
+</head>
+
+<body>
+	<div id="barra-ufrn" class="barra">
+		<div id="barra-marca">
+			<img src="img/ufrn.png"><span>SISTEMAS DE BIBLIOTECA DA UFRN</span>
+		<div class="selecao">
+			
+		<select>
+			<option value="">Escolha uma biblioteca</option>
+			<option value="biblioteca1">Biblioteca 1</option>
+			<option value="biblioteca2">Biblioteca 2</option>
+			<option value="biblioteca3">Biblioteca 3</option>
+			<option value="biblioteca4">Biblioteca 4</option>
+		</select>
+		</div>
+		<div class="acessibilidade">
+			<a href="#" onclick="sizeFont('conteudo','+');" title="Aumentar texto"><img src="img/font_up.png"></a>
+			<a href="#" onclick="sizeFont('conteudo','-');" title="Diminuir texto"><img src="img/font_down.png"></a>
+			<font style="font-size: 11px"></font>
+		</div>
+		</div>
+	</div>
+	<section id="geral">
+		<section id="bg">
+			<header>
+				<section id = "centro">
+					<div id="logo">
+					<a href="index.html"><!-- class="imglogo">--><img src="img/logo.png"></a>
+					</div>
+					<div id="nav">
+						<div id="menu">
+							<div id="menu-esquerdo">
+							<ul>
+								<li><a href="interna.html">Institucional</a></li>
+								<li><a href="interna.html">Catálogo</a></li>
+								<li><a href="noticias.html">Notícias</a></li>
+								
+							</div>
+							<div id="menu-direito">
+								<ul>
+									<li><a href="interna.html">Serviços</a></li>
+									<li><a href="contato.html">Contato</a></li>
+									<li><a href="interna.html">Webmail</a></li>
+							</div>
+						</div>
+					</div>
+					
+					
+				</section>
+			</header>
+				<section id="conteudo">
+					<div id="area_animacao">
+						<div id="slider" class="nivoSlider">
+							
+							<img src="img/captions.jpg" title='#htmlcaption4'/>
+							<img src="img/features.jpg"  title='#htmlcaption2' />
+							<img src="img/overflow.jpg" title='#htmlcaption3'/>
+							<img src="img/zilamamede.jpg" title='#htmlcaption'/>
+							<img src="img/coffee.jpg" title='#htmlcaption5'/>
+						</div>
+						<div id="htmlcaption3" class="nivo-html-caption">
+							<span>Biblioteca Setorial 3</span>
+						</div>
+						<div id="htmlcaption" class="nivo-html-caption">
+							<span>Biblioteca Central Zila Mamede</span>
+						</div>						
+						<div id="htmlcaption2" class="nivo-html-caption">
+							<span>Biblioteca Setorial 1</span>
+						</div>
+						<div id="htmlcaption4" class="nivo-html-caption">
+							<span>Biblioteca Setorial 4</span>
+						</div>
+						<div id="htmlcaption5" class="nivo-html-caption">
+							<span>Biblioteca Setorial 5</span>
+						</div>
+									
+					</div>
+					<div id="noticias">
+					<strong>Últimas Notícias</strong>
+					<div id="list-noticia">
+						<ul>
+							<li><a href="#"><label class="data">27/06/2014 - </label>Lorem ipsum dolor sit amet.</a></li>
+							<li ><a href="#"><label class="data">27/06/2014 - </label>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Quisque congue, purus quis.</a></li>				  
+							<li><a href="#"><label class="data">27/06/2014 - </label>Lorem ipsum dolor sit amet.</a></li>
+							<li><a href="#"><label class="data">27/06/2014 - </label>Lorem ipsum dolor sit amet.</a></li>
+							<li><a href="#"><label class="data">27/06/2014 - </label>Lorem ipsum dolor sit amet.</a></li>
+						</ul>
+					</div>
+					<div class="mais"><a href="noticias.html">mais notícias</a></div>
+					</div>
+					<div id="hWrapper">
+					<!--PARCEIROS LOCAIS-->
+					<span>Parceiros Locais</span>
+                            <div id="seta_esquerda">
+                            <a class="prev browse left">
+                                <img src="img/back.png" />
+                            </a>
+								</div>
+					
+					<div class="scrollable" id="locais">
+					 <div class="items">
+						<div>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_1.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_2.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_3.jpg" /></a>
+								</span >
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_4.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_5.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_6.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_7.jpg" /></a>
+								</span>
+						</div>
+						<div>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_7.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_8.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_9.jpg" /></a>
+								</span >
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_10.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_11.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_12.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_13.jpg" /></a>
+								</span>
+						</div>
+					</div>
+					
+					</div>
+					
+						<div id="seta_direita">
+                            <a class="next browse right">
+                                <img src="img/forward.png" />
+                            </a>
+                        </div>
+						<!--<div id="linha"></div>-->
+						<!--PARCEIROS NACIONAIS-->
+					<span>Parceiros Nacionais</span>
+                            <div id="seta_esquerda">
+                            <a class="prev browse left">
+                                <img src="img/back.png" />
+                            </a>
+								</div>
+					
+					<div class="scrollable" id="nacionais">
+					 <div class="items">
+						<div>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_1.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_2.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_3.jpg" /></a>
+								</span >
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_4.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_5.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_6.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_7.jpg" /></a>
+								</span>
+						</div>
+						<div>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_7.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_8.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_9.jpg" /></a>
+								</span >
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_10.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_11.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_12.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_13.jpg" /></a>
+								</span>
+						</div>
+					</div>
+					
+					</div>
+					
+					<div id="seta_direita">
+                            <a class="next browse right">
+                                <img src="img/forward.png" />
+                            </a>
+                        </div>
+						<!--<label>Parceiros Nacionais</label>
+						<div id="nacionais" class="scrollable">
+								 <div id="seta_esquerda">
+                            <a class="prev browse left">
+                                <img src="img/back.png" />
+                            </a>
+								</div>
+							<div class="items">
+								<div>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_1.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_2.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_3.jpg" /></a>
+								</span >
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_4.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_5.jpg" /></a>
+								</span>
+								<span id="foto">
+									<a href="#" title=""><img alt="" src="img/images/img_6.jpg" /></a>
+								</span>
+							   <!-- <span>
+									<a href="#" title=""><img alt="" src="img/images/img_7.jpg" /></a>
+								</span>
+								<span>
+									<a href="#" title=""><img alt="" src="img/images/img_8.jpg" /></a>
+								</span>
+								<span>
+									<a href="#" title=""><img alt="" src="img/images/img_9.jpg" /></a>
+								</span>
+								<span>
+									<a href="#" title=""><img alt="" src="img/images/img_10.jpg" /></a>
+								</span>
+								<span>
+									<a href="#" title=""><img alt="" src="img/images/img_11.jpg" /></a>
+								</span>
+								<span>
+									<a href="#" title=""><img alt="" src="img/images/img_12.jpg" /></a>
+								</span>
+								<span>
+									<a href="#" title=""><img alt="" src="img/images/img_13.jpg" /></a>
+								</span>
+								<span>
+									<a href="#" title=""><img alt="" src="img/images/img_14.jpg" /></a>
+								</span>
+								<span>
+									<a href="#" title=""><img alt="" src="img/images/img_15.jpg" /></a>
+								</span>
+								<span>
+									<a href="#" title=""><img alt="" src="img/images/img_16.jpg" /></a>
+								</span>
+							</div>
+							</div>
+						<div id="seta_direita">
+                            <a class="next browse right">
+                                <img src="img/forward.png" />
+                            </a>
+                        </div>
+						</div>
+					</div>-->
+                   </div>
+				
+				</section>
+				<footer>
+				<section id="centraliza">
+                        <div class="direitos">
+                        <strong>Sistemas de Biblioteca da UFRN</strong> &copy; Copyright 2014. Todos os direitos reservados.<br>
+                        <a href="http://www.ufrn.br" target="_blank">UFRN - Universidade Federal do Rio Grande do Norte</a>
+                    </div>
+                    <div class="desenvolvido">
+                        <label>Desenvolvido por:</label>
+                        <a href="http://www.info.ufrn.br" target="_blank" title="Superintendência de Informática - UFRN">
+                            <img src="img/sinfo.png" align="absmiddle" title="" />
+                        </a>
+                    </div>
+                </section>
+				</footer>
+		</section>
+	</section>
+
+
+
+   
+</body>
