@@ -7,6 +7,6 @@ Site estático desenvolvido para alguns setores da UFRN
 - CSS
 - Javasript
 - Jquery
-- 
+
 ## Execução
 Basta entrar na pasta do projeto e abrir o index.html com algum navegador ou executar em um servidor local e abrir o index.php
